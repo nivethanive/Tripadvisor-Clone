@@ -364,6 +364,7 @@ body {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 40px;
+  
 }
 
 /* Cards Wrapper */
@@ -428,12 +429,15 @@ body {
 
 .iconic-places-section {
   padding: 40px 60px;
-  font-family: 'Segoe UI', sans-serif;
+  
+  justify-content: center;
+  
+  
 }
 
 .iconic-title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 30px;
 }
 
@@ -441,6 +445,7 @@ body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .iconic-card {
@@ -571,6 +576,43 @@ body {
   margin-top: 20px;
 }
 
+/* Responsive Layout */
+@media screen and (max-width: 1024px) {
+  .container,
+  .cards,
+  .card-container,
+  .section,
+  .footer,
+  .center,
+  .right {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left, .center, .right {
+    margin-bottom: 15px;
+  }
+
+  .card,
+  .card img {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navbar .left, 
+  .navbar .center, 
+  .navbar .right {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+}
 
 
 
